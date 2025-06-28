@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benim Web Sitem</title>
+    <style>
+      /* ——— Genel Stil ——— */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* ——— Üst Kısım ——— */
+      header {
+        background: #4e54c8; /* mor‑mavi gradyan */
+        color: #fff;
+        padding: 20px 40px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: opacity 0.3s;
+      }
+      nav a:hover {
+        opacity: 0.7;
+      }
+
+      /* ——— Hero Alanı ——— */
+      .hero {
+        background: url("https://source.unsplash.com/1400x800?technology") center / cover;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        max-width: 90vw;
+      }
+
+      /* ——— Genel Bölümler ——— */
+      .section {
+        padding: 60px 40px;
+      }
+
+      /* ——— Özellik Kartları ——— */
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+      .card {
+        background: #f7f7f7;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* ——— İletişim Formu ——— */
+      .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
+        margin: auto;
+      }
+      input,
+      textarea,
+      button {
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 1rem;
+      }
+      textarea {
+        resize: vertical;
+      }
+      button {
+        background: #4e54c8;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: opacity 0.3s;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+
+      /* ——— Alt Bilgi ——— */
+      footer {
+        background: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ——— Navigasyon ——— -->
+    <header>
+      <nav>
+        <div class="logo">LOGO</div>
+        <ul>
+          <li><a href="#home">Anasayfa</a></li>
+          <li><a href="#features">Özellikler</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ——— Hero ——— -->
+    <section id="home" class="hero">
+      <h1>SELAMALEYKUM BEN HILMI ÇİL NAMI DEGER KATIR SIKEN (ayhan) NEYSE BU KADARDI hoscakalin</h1>
+    </section>
+
+    <!-- ——— Özellikler ——— -->
+    <section id="features" class="section">
+      <h2 style="text-align: center; margin-bottom: 40px">Neden Bizi Seçmelisiniz?</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Hızlı</h3>
+          <p>Siteniz ışık hızında yüklenir ve performansından ödün vermez.</p>
+        </div>
+        <div class="card">
+          <h3>Responsive</h3>
+          <p>Tüm cihazlarda mükemmel görünüm.</p>
+        </div>
+        <div class="card">
+          <h3>Kolay Kullanım</h3>
+          <p>Sade arayüz ile içerik yönetimi çocuk oyuncağı.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ——— İletişim ——— -->
+    <section id="contact" class="section contact">
+      <h2 style="text-align: center; margin-bottom: 40px">Bize Ulaşın</h2>
+      <form>
+        <input type="text" placeholder="Adınız" required />
+        <input type="email" placeholder="E‑posta" required />
+        <textarea rows="5" placeholder="Mesajınız" required></textarea>
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+
+    <!-- ——— Alt Bilgi ——— -->
+    <footer>
+      <p>&copy; 2025 Tüm Hakları Saklıdır</p>
+    </footer>
+  </body>
+</html>
+
+
+l>
+
+
